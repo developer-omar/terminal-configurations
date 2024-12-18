@@ -32,6 +32,8 @@ config.keys = {
 		action = wezterm.action.CopyTo("ClipboardAndPrimarySelection"),
 	},
 
+	-- Drag and Drop of Directories --
+
 	-- Manage of Panels --
 	{
 		key = "d",
