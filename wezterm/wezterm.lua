@@ -13,6 +13,7 @@ config.enable_scroll_bar = true -- Enable scrollbar
 
 -- CHANGING KEY ASSIGNMENTS --
 config.disable_default_key_bindings = true
+config.quote_dropped_files = "SpacesOnly"
 config.keys = {
 	-- General --
 	-- CTRL-SHIFT-l activates the debug overlay
