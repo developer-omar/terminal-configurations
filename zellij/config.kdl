@@ -202,14 +202,6 @@ keybinds clear-defaults=true {
             }
             SwitchToMode "locked"
         }
-        bind "Alt b" {
-            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij-bookmarks.wasm" {
-                floating true
-                cwd "/home/omar/.config/zellij/bookmarks/"
-                filename "zellij_bookmarks.yml"
-            }
-            SwitchToMode "locked"
-        }
     }
     shared_except "locked" "renametab" "renamepane" {
         bind "Ctrl g" { SwitchToMode "locked"; }
