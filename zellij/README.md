@@ -4,7 +4,9 @@
 
 install essential software tools and libraries needed to compile software from source code
 
-sudo apt install build-essential
+    ```bash
+    sudo apt install build-essential
+    ```
 
 1. Install [Zellij](https://zellij.dev/documentation/installation) according
 to your operating system,I installed this with
