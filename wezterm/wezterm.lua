@@ -6,6 +6,7 @@ local theme = "catppuccin-macchiato" -- LiquidCarbon or Bamboo
 config.font = wezterm.font("JetBrains Mono") -- Font for our terminal
 -- config.color_scheme = 'Glacier' -- Theme of terminal
 config.color_scheme = theme
+config.line_height = 1.0
 
 config.enable_tab_bar = false --Disable tab bar
 config.enable_scroll_bar = true -- Enable scrollbar
@@ -181,7 +182,7 @@ config.keys = {
 -- })
 
 config.window_padding = {
-	top = 00,
+	top = 0,
 	right = 2,
 	bottom = 0,
 	left = 2,

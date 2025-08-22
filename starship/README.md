@@ -20,8 +20,12 @@ This configuration works with zsh and [Oh My Zsh framework](https://ohmyz.sh).
 
 - You can use any of [configuration presets for Starship](https://starship.rs/presets/), for example:
 
-```bash
- starship preset pure-preset -o ~/.config/starship.toml
- ```
+    ```bash
+    starship preset pure-preset -o ~/.config/starship.toml
+    ```
 
 - You can put starship.toml into ~/.config/
+
+4. Adding the following line at the end of file .zshrc
+
+    > eval "$(starship init zsh)"
