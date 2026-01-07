@@ -2,8 +2,8 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
-local theme = "catppuccin-macchiato" -- LiquidCarbon or Bamboo
-config.font = wezterm.font("JetBrains Mono") -- Font for our terminal
+local theme = "Tokyo Night (Gogh)" -- LiquidCarbon or Bamboo
+config.font = wezterm.font("FiraCode Nerd Font") -- Font for our terminal
 -- config.color_scheme = 'Glacier' -- Theme of terminal
 config.color_scheme = theme
 config.line_height = 1.0
@@ -37,46 +37,46 @@ config.keys = {
 	-- Drag and Drop of Directories --
 
 	-- Manage of Panels --
-	{
-		key = "d",
-		mods = "CTRL|ALT",
-		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
-	},
-	{
-		key = "r",
-		mods = "CTRL|ALT",
-		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
-	},
-	{
-		key = "w",
-		mods = "CTRL|SHIFT",
-		action = wezterm.action.CloseCurrentPane({ confirm = true }),
-	},
-	{
-		key = "w",
-		mods = "CTRL|SHIFT",
-		action = wezterm.action.CloseCurrentPane({ confirm = true }),
-	},
-	{
-		key = "UpArrow",
-		mods = "ALT|SHIFT",
-		action = wezterm.action.AdjustPaneSize({ "Up", 1 }),
-	},
-	{
-		key = "DownArrow",
-		mods = "ALT|SHIFT",
-		action = wezterm.action.AdjustPaneSize({ "Down", 1 }),
-	},
-	{
-		key = "LeftArrow",
-		mods = "ALT|SHIFT",
-		action = wezterm.action.AdjustPaneSize({ "Left", 1 }),
-	},
-	{
-		key = "RightArrow",
-		mods = "ALT|SHIFT",
-		action = wezterm.action.AdjustPaneSize({ "Right", 1 }),
-	},
+	-- {
+	-- 	key = "d",
+	-- 	mods = "CTRL|ALT",
+	-- 	action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
+	-- },
+	-- {
+	-- 	key = "r",
+	-- 	mods = "CTRL|ALT",
+	-- 	action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+	-- },
+	-- {
+	-- 	key = "w",
+	-- 	mods = "CTRL|SHIFT",
+	-- 	action = wezterm.action.CloseCurrentPane({ confirm = true }),
+	-- },
+	-- {
+	-- 	key = "w",
+	-- 	mods = "CTRL|SHIFT",
+	-- 	action = wezterm.action.CloseCurrentPane({ confirm = true }),
+	-- },
+	-- {
+	-- 	key = "UpArrow",
+	-- 	mods = "ALT|SHIFT",
+	-- 	action = wezterm.action.AdjustPaneSize({ "Up", 1 }),
+	-- },
+	-- {
+	-- 	key = "DownArrow",
+	-- 	mods = "ALT|SHIFT",
+	-- 	action = wezterm.action.AdjustPaneSize({ "Down", 1 }),
+	-- },
+	-- {
+	-- 	key = "LeftArrow",
+	-- 	mods = "ALT|SHIFT",
+	-- 	action = wezterm.action.AdjustPaneSize({ "Left", 1 }),
+	-- },
+	-- {
+	-- 	key = "RightArrow",
+	-- 	mods = "ALT|SHIFT",
+	-- 	action = wezterm.action.AdjustPaneSize({ "Right", 1 }),
+	-- },
 	-- {
 	-- 	key = "UpArrow",
 	-- 	mods = "ALT",
@@ -99,47 +99,47 @@ config.keys = {
 	-- },
 
 	-- Manage of Tabs --
-	{
-		key = "q",
-		mods = "CTRL|SHIFT",
-		action = wezterm.action.CloseCurrentTab({ confirm = true }),
-	},
-	{
-		key = "PageUp",
-		mods = "CTRL",
-		action = wezterm.action.ActivateTabRelative(-1),
-	},
-	{
-		key = "PageDown",
-		mods = "CTRL",
-		action = wezterm.action.ActivateTabRelative(1),
-	},
-	{
-		key = "PageUp",
-		mods = "CTRL|SHIFT",
-		action = wezterm.action.MoveTabRelative(-1),
-	},
-	{
-		key = "PageDown",
-		mods = "CTRL|SHIFT",
-		action = wezterm.action.MoveTabRelative(1),
-	},
-	{
-		key = "t",
-		mods = "CTRL|SHIFT",
-		action = wezterm.action.SpawnTab("CurrentPaneDomain"),
-	},
-	-- Create a new tab in the default domain
-	{
-		key = "t",
-		mods = "CTRL|SHIFT",
-		action = wezterm.action.SpawnTab("DefaultDomain"),
-	},
-	{
-		key = "n",
-		mods = "SHIFT|CTRL",
-		action = wezterm.action.SpawnWindow,
-	},
+	-- {
+	-- 	key = "q",
+	-- 	mods = "CTRL|SHIFT",
+	-- 	action = wezterm.action.CloseCurrentTab({ confirm = true }),
+	-- },
+	-- {
+	-- 	key = "PageUp",
+	-- 	mods = "CTRL",
+	-- 	action = wezterm.action.ActivateTabRelative(-1),
+	-- },
+	-- {
+	-- 	key = "PageDown",
+	-- 	mods = "CTRL",
+	-- 	action = wezterm.action.ActivateTabRelative(1),
+	-- },
+	-- {
+	-- 	key = "PageUp",
+	-- 	mods = "CTRL|SHIFT",
+	-- 	action = wezterm.action.MoveTabRelative(-1),
+	-- },
+	-- {
+	-- 	key = "PageDown",
+	-- 	mods = "CTRL|SHIFT",
+	-- 	action = wezterm.action.MoveTabRelative(1),
+	-- },
+	-- {
+	-- 	key = "t",
+	-- 	mods = "CTRL|SHIFT",
+	-- 	action = wezterm.action.SpawnTab("CurrentPaneDomain"),
+	-- },
+	-- -- Create a new tab in the default domain
+	-- {
+	-- 	key = "t",
+	-- 	mods = "CTRL|SHIFT",
+	-- 	action = wezterm.action.SpawnTab("DefaultDomain"),
+	-- },
+	-- {
+	-- 	key = "n",
+	-- 	mods = "SHIFT|CTRL",
+	-- 	action = wezterm.action.SpawnWindow,
+	-- },
 }
 
 -- TAB BAR --
