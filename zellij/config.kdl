@@ -149,7 +149,7 @@ keybinds clear-defaults=true {
  //       bind "Alt j" { MoveFocus "down"; }
  //       bind "Alt k" { MoveFocus "up"; }
  //       bind "Alt l" { MoveFocusOrTab "right"; }
-        bind "Alt n" { NewPane; }
+        // bind "Alt n" { NewPane; }
  //       bind "Alt o" { MoveTab "right"; }
         bind "Alt Shift o" { MoveTab "right"; }
     }
@@ -288,6 +288,12 @@ plugins {
 load_plugins {
 }
 
+
+ui {
+    pane_frames {
+        hide_session_name true
+    }
+}
 // Use a simplified UI without special fonts (arrow glyphs)
 // Options:
 //   - true
@@ -298,7 +304,8 @@ load_plugins {
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "catppuccin-macchiato"
+// theme "tokyo-night-dark"
+theme "tokyo-night-dark"
 
 // Choose the base input mode of zellij.
 // Default: normal
@@ -317,7 +324,7 @@ default_mode "locked"
 // The name of the default layout to load on startup
 // Default: "default"
 //
-// default_layout "compact"
+default_layout "work"
 
 // The folder in which Zellij will look for layouts
 // (Requires restart)
